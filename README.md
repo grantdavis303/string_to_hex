@@ -4,7 +4,19 @@
 
 ### About
 
-This is an application that converts a string to a hexadecimal code.
+This is an application that converts a string of any length to a hexadecimal code.
+
+### Screenshots
+
+**Example 1**
+
+![Image 1](public/ex1.png)
+![Image 2](public/ex2.png)
+
+**Example 2**
+
+![Image 3](public/ex3.png)
+![Image 4](public/ex4.png)
 
 ### Setup
 
@@ -27,13 +39,15 @@ rails s
 
 ### Tests
 
-* 0 Total Tests (0 / 0 LOC (100.0%) covered)
+* 6 Total Tests (66 / 66 LOC (100.0%) covered)
 
 **Testing Instructions**
 
 ```
 rails db:{drop,create,migrate,seed}
 bundle exec rspec spec
+
+open coverage/index.html
 ```
 
 ### Resources
