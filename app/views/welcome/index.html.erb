@@ -1,0 +1,21 @@
+<%= render partial: "shared/main_nav" %>
+
+<h2> What is this app? </h2>
+<p> This is an application that converts a string of any length to a hexadecimal code. </p>
+
+<h2> Valid Inputs </h2>
+<ul>
+  <li> Empty string - <span class="string">""</span> </li>
+  <li> Single character - <span class="string">"a"</span> </li>
+  <li> Single word - <span class="string"> "hello" </span> </li>
+  <li> Sentence - <span class="string"> "The dog jumped over the fence." </span> </li>
+  <li> Paragraph - <span class="string"> "Two dogs are happily playing together in the park. They chase each other around, wagging their tails in excitement. The dogs take turns playfully nipping at each other and rolling around on the grass. Their joyful barks fill the air as they run around in circles. It is heartwarming to see the bond between these two furry friends." </span> </li>
+  <li> <%= link_to "An entire novel?", "https://www.baen.com/Chapters/1597801348/1597801348___3.htm", target: "_blank" %></li>
+</ul>
+
+<h2> Input </h2>
+<%= form_with url: results_path, method: :post, data: {turbo: false} do |form| %>
+  <%= form.text_area :string, size: '60x12' %> <br>
+  <br>
+  <%= form.submit "Convert to Hexadecimal" %>
+<% end %>
