@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+html {
+  max-width: 1000px;
+  background-color: azure;
+}
+
+h1 a {
+  color: blue;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  transition: 1s;
+  color: rgb(56, 145, 177);
+}
+
+h1, h2, h3, p, ul {
+  font-family: monospace;
+}
+
+div.showcase {
+  height: 400px;
+  width: 400px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  border-radius: 50px;
+}
+
+span.string {
+  color: red;
+}
